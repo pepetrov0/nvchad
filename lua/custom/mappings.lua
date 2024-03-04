@@ -13,6 +13,12 @@ M.general = {
       "Format"
     },
 
+    -- code action with lsp
+    ["<leader>la"] = {
+      vim.lsp.buf.code_action,
+      "Code Action"
+    },
+
     --  format with conform
     ["<leader>fm"] = {
       function()
