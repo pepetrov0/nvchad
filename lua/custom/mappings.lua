@@ -19,6 +19,18 @@ M.general = {
       "Code Action"
     },
 
+    -- rename with lsp
+    ["<leader>lr"] = {
+      vim.lsp.buf.rename,
+      "Rename"
+    },
+
+    -- signature help with lsp
+    ["<leader>lk"] = {
+      vim.lsp.buf.signature_help,
+      "Signature Help"
+    },
+
     --  format with conform
     ["<leader>fm"] = {
       function()
